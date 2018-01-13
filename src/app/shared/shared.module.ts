@@ -1,7 +1,7 @@
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { DataTableModule } from 'angular-4-data-table/dist';
 import { CustomFormsModule } from 'ng2-validation';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -22,7 +22,6 @@ import { UserService } from './services/user.service';
     CommonModule,
     FormsModule,
     CustomFormsModule,
-    DataTableModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     NgbModule.forRoot(),
@@ -37,7 +36,6 @@ import { UserService } from './services/user.service';
     CommonModule,
     FormsModule,
     CustomFormsModule,
-    DataTableModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     NgbModule.forRoot().ngModule,
