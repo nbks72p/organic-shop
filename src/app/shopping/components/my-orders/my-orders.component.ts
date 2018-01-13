@@ -1,4 +1,5 @@
-import { AuthService } from 'shared/services/auth.service';
+import { AuthService } from './../../../shared/services/auth.service';
+
 import { OrderService } from '../../../shared/services/order.service';
 import { Component, OnInit } from '@angular/core';
 import 'rxjs/add/operator/switchMap';
@@ -10,10 +11,10 @@ import 'rxjs/add/operator/switchMap';
 })
 export class MyOrdersComponent {
   orders$;
-  
+
   constructor(
     private authService: AuthService,
-    private orderService: OrderService) { 
+    private orderService: OrderService) {
 
     this.orders$ = authService.user$.switchMap(u => orderService.getOrdersByUser(u.uid));
   }
